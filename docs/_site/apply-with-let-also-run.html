@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-13T23:56:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">otakijae</title><subtitle>blog</subtitle><author><name>otakijae</name><email>jh33836782@gmail.com</email></author><entry><title type="html">Kotlin apply, with, let, also, run</title><link href="http://localhost:4000/apply-with-let-also-run" rel="alternate" type="text/html" title="Kotlin apply, with, let, also, run" /><published>2025-01-13T00:00:00+09:00</published><updated>2025-01-13T00:00:00+09:00</updated><id>http://localhost:4000/apply%20with%20let%20also%20run</id><content type="html" xml:base="http://localhost:4000/apply-with-let-also-run"><![CDATA[<h2 id="kotlin-apply-with-let-also-run-은-언제-사용해야-하는가">Kotlin apply, with, let, also, run 은 언제 사용해야 하는가</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kotlin apply, with, let, also, run | otakijae</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Kotlin apply, with, let, also, run" />
+<meta name="author" content="otakijae" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Kotlin apply, with, let, also, run 은 언제 사용해야 하는가 간단하게 설명 Kotlin의 apply, with, let, also, run은 스코프 함수로, 객체를 처리할 때 더 간결하고 읽기 쉬운 코드를 작성할 수 있도록 도와줍니다. 각각의 용도는 다음과 같습니다:" />
+<meta property="og:description" content="Kotlin apply, with, let, also, run 은 언제 사용해야 하는가 간단하게 설명 Kotlin의 apply, with, let, also, run은 스코프 함수로, 객체를 처리할 때 더 간결하고 읽기 쉬운 코드를 작성할 수 있도록 도와줍니다. 각각의 용도는 다음과 같습니다:" />
+<link rel="canonical" href="http://localhost:4000/apply-with-let-also-run" />
+<meta property="og:url" content="http://localhost:4000/apply-with-let-also-run" />
+<meta property="og:site_name" content="otakijae" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-13T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kotlin apply, with, let, also, run" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"otakijae"},"dateModified":"2025-01-13T00:00:00+09:00","datePublished":"2025-01-13T00:00:00+09:00","description":"Kotlin apply, with, let, also, run 은 언제 사용해야 하는가 간단하게 설명 Kotlin의 apply, with, let, also, run은 스코프 함수로, 객체를 처리할 때 더 간결하고 읽기 쉬운 코드를 작성할 수 있도록 도와줍니다. 각각의 용도는 다음과 같습니다:","headline":"Kotlin apply, with, let, also, run","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/apply-with-let-also-run"},"url":"http://localhost:4000/apply-with-let-also-run"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="otakijae" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">otakijae</h2>
+    </a>
+    <ul>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        otakijae
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2025-01-13 00:00:00 +0900">January 13, 2025</time>
+    
+  </div>
+
+  <h1 class="post-title">Kotlin apply, with, let, also, run</h1>
+  <div class="post-line"></div>
+
+  <h2 id="kotlin-apply-with-let-also-run-은-언제-사용해야-하는가">Kotlin apply, with, let, also, run 은 언제 사용해야 하는가</h2>
 
 <ul>
   <li>
@@ -155,14 +232,27 @@ val result = person.run {
   </tbody>
 </table>
 
-<p><strong>선택 기준</strong>: 작업의 목적(객체 설정, 변환, 부가 작업 등)에 따라 적절한 스코프 함수를 선택하세요.</p>]]></content><author><name>otakijae</name></author><category term="kotlin" /><summary type="html"><![CDATA[Kotlin apply, with, let, also, run 은 언제 사용해야 하는가 간단하게 설명 Kotlin의 apply, with, let, also, run은 스코프 함수로, 객체를 처리할 때 더 간결하고 읽기 쉬운 코드를 작성할 수 있도록 도와줍니다. 각각의 용도는 다음과 같습니다:]]></summary></entry><entry><title type="html">First posting</title><link href="http://localhost:4000/first" rel="alternate" type="text/html" title="First posting" /><published>2025-01-13T00:00:00+09:00</published><updated>2025-01-13T00:00:00+09:00</updated><id>http://localhost:4000/first</id><content type="html" xml:base="http://localhost:4000/first"><![CDATA[<p><img src="https://raw.githubusercontent.com/otakijae/otakijae.github.io/refs/heads/main/docs/images/test.jpg" alt="image" /></p>
+<p><strong>선택 기준</strong>: 작업의 목적(객체 설정, 변환, 부가 작업 등)에 따라 적절한 스코프 함수를 선택하세요.</p>
 
-<h2 id="first-posting">First posting</h2>
+</div>
 
-<ul>
-  <li>it seems like</li>
-</ul>
 
-<h2 id="youtube">YouTube</h2>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Vcc19Ea2qc?si=N__GzVaDu5gdaLm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>]]></content><author><name>otakijae</name></author><category term="otakijae" /><summary type="html"><![CDATA[First posting it seems like YouTube]]></summary></entry></feed>
+<div class="pagination">
+  
+    <a href="/first" class="left arrow">&#8592;</a>
+  
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2025-01-13 23:56:41 +0900">2025</time> otakijae. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>
